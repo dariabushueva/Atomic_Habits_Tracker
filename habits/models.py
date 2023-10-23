@@ -15,10 +15,10 @@ class Habit(models.Model):
 
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name='Пользователь')
 
-    related_habit = models.ForeignKey('self', on_delete=models.SET_NULL, **NULLABLE)
+    related_habit = models.ForeignKey('Habit', on_delete=models.SET_NULL, **NULLABLE)
     reward = models.CharField(max_length=150, **NULLABLE, verbose_name='Вознаграждение')
 
-    is_published = models.BooleanField(default=False, verbose_name='Публичная')
+    is_public = models.BooleanField(default=False, verbose_name='Публичная')
     is_pleasant = models.BooleanField(default=False, verbose_name='Приятная')
 
     def __str__(self):
