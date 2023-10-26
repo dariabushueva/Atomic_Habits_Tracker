@@ -19,9 +19,14 @@ class HabitCreateAPIView(generics.CreateAPIView):
 class HabitListAPIView(generics.ListAPIView):
     """ Список всех привычек """
     serializer_class = HabitSerializer
-    queryset = Habit.objects.all()
     pagination_class = HabitsPagination
     permission_classes = [IsOwnerOrIsSuperuser]
+
+    def get_queryset(self):
+        if self.request.user.is_superuser:
+            return Habit.objects.all()
+        else:
+            return Habit.objects.filter(user=self.request.user)
 
 
 class PublicHabitsListAPIView(generics.ListAPIView):
@@ -48,7 +53,6 @@ class HabitUpdateAPIView(generics.UpdateAPIView):
 
 class HabitDestroyAPIView(generics.DestroyAPIView):
     """ Удаление привычки """
-
     queryset = Habit.objects.all()
     permission_classes = [IsOwnerOrIsSuperuser]
 
