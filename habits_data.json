@@ -1,0 +1,178 @@
+[
+  {
+    "model": "habits.habit",
+    "pk": 3,
+    "fields": {
+      "action": "Выпить стакан воды",
+      "time": "2023-10-25T08:00:00Z",
+      "frequency": 7,
+      "time_to_complete": "00:01:00",
+      "place": "На кухне",
+      "user": 1,
+      "related_habit": null,
+      "reward": "Вкуснейший капучино",
+      "is_public": true,
+      "is_pleasant": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 4,
+    "fields": {
+      "action": "Позависать в instagram",
+      "time": "2023-10-25T09:10:00Z",
+      "frequency": 7,
+      "time_to_complete": "00:02:00",
+      "place": "в телефоне",
+      "user": 1,
+      "related_habit": null,
+      "reward": null,
+      "is_public": false,
+      "is_pleasant": true
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 5,
+    "fields": {
+      "action": "Сделать йогу",
+      "time": "2023-10-25T09:00:00Z",
+      "frequency": 7,
+      "time_to_complete": "00:02:00",
+      "place": "в гостиной перед окном",
+      "user": 1,
+      "related_habit": 4,
+      "reward": null,
+      "is_public": false,
+      "is_pleasant": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 7,
+    "fields": {
+      "action": "Сделать английский на Duolingo",
+      "time": "2023-10-25T18:00:00Z",
+      "frequency": 7,
+      "time_to_complete": "00:02:00",
+      "place": "в автобусе",
+      "user": 5,
+      "related_habit": null,
+      "reward": "заплптить себе 50 руб",
+      "is_public": true,
+      "is_pleasant": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 8,
+    "fields": {
+      "action": "Посмотреть сериал",
+      "time": "2023-10-25T22:00:00Z",
+      "frequency": 7,
+      "time_to_complete": "00:02:00",
+      "place": "в кровати",
+      "user": 5,
+      "related_habit": null,
+      "reward": null,
+      "is_public": true,
+      "is_pleasant": true
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 9,
+    "fields": {
+      "action": "Почитать книгу",
+      "time": "2023-10-25T21:50:00Z",
+      "frequency": 7,
+      "time_to_complete": "00:02:00",
+      "place": "в кровати",
+      "user": 5,
+      "related_habit": 8,
+      "reward": null,
+      "is_public": true,
+      "is_pleasant": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 10,
+    "fields": {
+      "action": "Присесть 20 раз",
+      "time": "2023-10-25T09:00:00Z",
+      "frequency": 3,
+      "time_to_complete": "00:01:00",
+      "place": "в комнате",
+      "user": 6,
+      "related_habit": null,
+      "reward": "сыграть в WordOfTank",
+      "is_public": false,
+      "is_pleasant": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 11,
+    "fields": {
+      "action": "Подтянуться 10 раз",
+      "time": "2023-10-25T19:00:00Z",
+      "frequency": 3,
+      "time_to_complete": "00:01:20",
+      "place": "на уличном турнике",
+      "user": 6,
+      "related_habit": null,
+      "reward": "посмотреть ТикТок",
+      "is_public": true,
+      "is_pleasant": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 12,
+    "fields": {
+      "action": "Загрузить посудомойку",
+      "time": "2023-10-25T21:00:00Z",
+      "frequency": 7,
+      "time_to_complete": "00:01:30",
+      "place": "на кухне",
+      "user": 7,
+      "related_habit": null,
+      "reward": "съесть конфетку",
+      "is_public": false,
+      "is_pleasant": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 13,
+    "fields": {
+      "action": "Полистать Cosmopolitan",
+      "time": "2023-10-25T12:00:00Z",
+      "frequency": 3,
+      "time_to_complete": "00:02:00",
+      "place": "на диване",
+      "user": 7,
+      "related_habit": null,
+      "reward": null,
+      "is_public": true,
+      "is_pleasant": true
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 14,
+    "fields": {
+      "action": "Пропылесосить студию",
+      "time": "2023-10-25T11:55:00Z",
+      "frequency": 3,
+      "time_to_complete": "00:02:00",
+      "place": "дома",
+      "user": 7,
+      "related_habit": 13,
+      "reward": null,
+      "is_public": true,
+      "is_pleasant": false
+    }
+  }
+]

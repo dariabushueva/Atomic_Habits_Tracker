@@ -1,0 +1,82 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$9fcTMQq17ZmJw6u2pWzJVp$sTCct+6SOqfR41HLxq9g9PAFbmFCP46ZLABfDKKmLoU=",
+      "last_login": "2023-10-23T19:05:53.025Z",
+      "is_superuser": true,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-10-23T19:05:08.548Z",
+      "email": "admin@admin.com",
+      "chat_id": null,
+      "phone": null,
+      "avatar": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$flfbtSCizunkrbgRMKPurk$LdRSWSzu97FZvoUSUlqxXW3dOl5VJvlkLKkwNFnimYg=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-10-26T16:52:38.904Z",
+      "email": "atlanttok@yandex.ru",
+      "chat_id": null,
+      "phone": null,
+      "avatar": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$FlZBBgWRO8p3qRde6Xgzz5$N6kxCz6dFOHzRk+kXO5KqzVMkkJg7mwtA4SCMW0Fg1s=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-10-26T16:53:06.333Z",
+      "email": "friendlyapart@yandex.ru",
+      "chat_id": null,
+      "phone": null,
+      "avatar": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$toxqoZfBLjxQPEGJ36SfSk$xeAaPw1+OG8GP5DPHgWSaKVrDJBeJNon1BQl9mdmJAo=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-10-26T16:53:27.540Z",
+      "email": "wcxto@yandex.ru",
+      "chat_id": null,
+      "phone": null,
+      "avatar": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
