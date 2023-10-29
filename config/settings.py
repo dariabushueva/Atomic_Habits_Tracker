@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'rest_framework_simplejwt',
+    'django_celery_beat',
     'corsheaders',
     'drf_yasg',
 
@@ -166,7 +167,18 @@ CSRF_TRUSTED_ORIGINS = [
     "https://read-and-write.example.com",
 ]
 
-CELERY_BROKER_URL = 'redis://localhost:6379'
-CELERY_RESULT_BACKEND = 'redis://localhost:6379'
-CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
-CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
+CELERY_BROKER_URL = config('CELERY_BROKER_URL')
+CELERY_RESULT_BACKEND = config('CELERY_RESULT_BACKEND')
+CELERY_TIMEZONE = "Europe/Moscow"
+CELERY_TASK_TRACK_STARTED = config('CELERY_TASK_TRACK_STARTED') == '1'
+CELERY_TASK_TIME_LIMIT = 30 * 60
+CELERY_BEAT_SCHEDULE = {
+    'send_telegram_message': {
+        'task': 'send_telegram_message',
+        'schedule': timedelta(minutes=1)
+    },
+}
+
+
+TELEGRAM_BOT_API_KEY = config('TELEGRAM_BOT_API_KEY')
+TELEGRAM_CHAT_ID = config('TELEGRAM_CHAT_ID')

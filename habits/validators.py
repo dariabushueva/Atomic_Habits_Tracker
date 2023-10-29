@@ -69,5 +69,5 @@ class FrequencyValidation:
 
     def __call__(self, value):
         frequency = value.get(self.frequency_field)
-        if frequency < 1:
+        if frequency > 7:
             raise ValidationError('Привычка должна выполняться НЕ реже 1 раза в неделю')
