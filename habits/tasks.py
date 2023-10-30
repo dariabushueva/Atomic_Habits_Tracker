@@ -32,8 +32,3 @@ def send_telegram_message():
 
             habit.next_reminder_date = current_date + timedelta(days=period)
             habit.save()
-
-
-
-
-

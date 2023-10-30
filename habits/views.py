@@ -55,5 +55,3 @@ class HabitDestroyAPIView(generics.DestroyAPIView):
     """ Удаление привычки """
     queryset = Habit.objects.all()
     permission_classes = [IsOwnerOrIsSuperuser]
-
-

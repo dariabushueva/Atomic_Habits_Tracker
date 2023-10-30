@@ -73,7 +73,7 @@ class ValidatorsTestCase(APITestCase):
         self.assertEquals(
             response.json(),
             {'non_field_errors':
-                 ['Время выполнения привычки НЕ должно превышать 120 секунд']
+                ['Время выполнения привычки НЕ должно превышать 120 секунд']
              }
         )
 
